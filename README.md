@@ -31,43 +31,6 @@ lib/
 middleware.ts       # Protección de rutas y autenticación
 ```
 
-## Configuración
-
-### 1. Variables de Entorno
-
-Copia `.env.local.example` a `.env.local` y configura tus credenciales de Supabase:
-
-```bash
-cp .env.local.example .env.local
-```
-
-Edita `.env.local` con tus valores:
-
-```
-NEXT_PUBLIC_SUPABASE_URL=tu-url-de-supabase
-NEXT_PUBLIC_SUPABASE_ANON_KEY=tu-clave-anon-de-supabase
-```
-
-### 2. Instalación
-
-```bash
-npm install
-```
-
-### 3. Desarrollo
-
-```bash
-npm run dev
-```
-
-Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
-
-### 4. Build de Producción
-
-```bash
-npm run build
-npm start
-```
 
 ## Características de Autenticación
 
@@ -86,10 +49,3 @@ npm start
 - `/register` - Registro de usuarios
 - `/dashboard/estudiante` - Dashboard de estudiante (protegido)
 - `/dashboard/consejero` - Dashboard de consejero (protegido)
-
-## Próximos Pasos
-
-1. Configurar tu proyecto de Supabase
-2. Crear las tablas necesarias en la base de datos
-3. Implementar funcionalidades específicas de cada rol
-4. Agregar componentes UI según necesidades
