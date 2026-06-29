@@ -49,6 +49,7 @@ export default function EstudianteLayout({
   const navItems = [
     { label: "Inicio", href: "/dashboard/estudiante" },
     { label: "Mis Materias", href: "/dashboard/estudiante/materias" },
+    { label: "Mis Reportes", href: "/dashboard/estudiante/reportes" },
   ];
 
   if (loading) {
@@ -76,11 +77,10 @@ export default function EstudianteLayout({
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block px-4 py-2 rounded-lg transition-colors ${
-                      isActive
-                        ? "bg-blue-50 text-blue-600 font-medium"
-                        : "text-gray-700 hover:bg-gray-100"
-                    }`}
+                    className={`block px-4 py-2 rounded-lg transition-colors ${isActive
+                      ? "bg-blue-50 text-blue-600 font-medium"
+                      : "text-gray-700 hover:bg-gray-100"
+                      }`}
                   >
                     {item.label}
                   </Link>
